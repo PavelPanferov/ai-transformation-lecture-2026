@@ -8,6 +8,8 @@ import {
   FileText, BookOpen, Lightbulb, MessageSquare, Brain, Eye, Zap, Target, Clock, TrendingUp
 } from 'lucide-react';
 
+const base = import.meta.env.BASE_URL;
+
 const SlideHeader = () => (
   <div className="flex justify-between items-start mb-8 text-xs font-mono text-slate-400 font-bold">
     <div>28.01.2026 | ALPHA EDUCATION</div>
@@ -81,8 +83,8 @@ export const Slide03Context: React.FC<SlideProps> = () => (
       {/* Left: Photo + Info */}
       <div className="w-[340px] flex flex-col flex-shrink-0 anim-fade-left">
         <div className="photo-glitch rounded-2xl overflow-hidden shadow-2xl ring-1 ring-black/10 w-[260px] h-[300px] relative mx-auto"
-          style={{ backgroundImage: 'url(/pavel-photo.jpg)', backgroundSize: 'cover', backgroundPosition: 'center top' }}>
-          <img src="/pavel-photo.jpg" alt="Павел Панферов" className="w-full h-full object-cover object-top" />
+          style={{ backgroundImage: `url(${base}pavel-photo.jpg)`, backgroundSize: 'cover', backgroundPosition: 'center top' }}>
+          <img src={`${base}pavel-photo.jpg`} alt="Павел Панферов" className="w-full h-full object-cover object-top" />
           <div className="photo-scanline" />
           <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent p-4">
             <h3 className="text-xl font-bold text-white">Павел Панферов</h3>
@@ -402,7 +404,7 @@ export const Slide10GoogleAI: React.FC<SlideProps> = () => (
       <div className="flex flex-col gap-4">
         <h3 className="font-mono text-red-500 uppercase tracking-widest text-sm font-bold flex items-center gap-2"><AlertTriangle size={16} /> 42% СВЕРНУЛИ AI — ANTI-PATTERNS</h3>
         <div className="rounded-xl overflow-hidden border border-red-200 shadow-sm">
-          <img src="/illust-tank.png" alt="Танк за хлебом" className="w-full h-28 object-cover object-center" />
+          <img src={`${base}illust-tank.png`} alt="Танк за хлебом" className="w-full h-28 object-cover object-center" />
         </div>
         <Card className="bg-red-50 border-red-200">
           <div className="font-bold text-slate-800 mb-1">«Купим Copilot всем»</div>
@@ -756,12 +758,12 @@ export const Slide20Contacts: React.FC<SlideProps> = () => (
     <div className="flex-1 flex flex-col justify-center items-center">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl w-full">
         <Card className="text-center !p-6 flex flex-col items-center">
-          <img src="/qr-telegram.png" alt="QR Blog" className="w-28 h-28 mb-3 rounded-lg" />
+          <img src={`${base}qr-telegram.png`} alt="QR Blog" className="w-28 h-28 mb-3 rounded-lg" />
           <p className="text-base font-bold text-slate-800">Мой блог</p>
           <p className="text-sm text-primary font-mono">@Panferov_AI_dev</p>
         </Card>
         <Card className="text-center !p-6 flex flex-col items-center border-primary/30 shadow-lg">
-          <img src="/qr-personal.png" alt="QR Personal" className="w-28 h-28 mb-3 rounded-lg" />
+          <img src={`${base}qr-personal.png`} alt="QR Personal" className="w-28 h-28 mb-3 rounded-lg" />
           <p className="text-base font-bold text-slate-800">Платные консультации</p>
           <p className="text-sm text-primary font-mono">@panferovp</p>
           <p className="text-xs text-slate-500 mt-1 font-mono">+998 94 000 13 70</p>
