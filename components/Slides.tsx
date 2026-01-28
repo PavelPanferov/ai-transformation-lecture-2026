@@ -785,3 +785,32 @@ export const Slide20Contacts: React.FC<SlideProps> = () => (
     </div>
   </div>
 );
+
+export const Slide21AlphaThanks: React.FC<SlideProps> = () => (
+  <div className="h-full flex flex-col p-8 md:p-12 justify-between">
+    <GlitchHeader text="Alpha Education" subtext="Спасибо за организацию!" />
+    <div className="flex-1 flex flex-col justify-center items-center">
+      <p className="text-xl text-slate-600 mb-10 text-center max-w-2xl">
+        Благодарим <strong className="text-primary">Alpha Education</strong> за организацию подобных встреч и развитие AI-сообщества в Узбекистане!
+      </p>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl w-full">
+        <Card className="text-center !p-8 flex flex-col items-center border-primary/30 shadow-lg">
+          <img src={`${base}qr-feedback.jpg`} alt="QR Feedback" className="w-36 h-36 mb-4 rounded-lg" />
+          <p className="text-lg font-bold text-slate-800">Обратная связь</p>
+          <p className="text-sm text-slate-500 mt-1">Поделитесь впечатлениями</p>
+        </Card>
+        <Card className="text-center !p-8 flex flex-col items-center border-violet-300 shadow-lg bg-violet-50">
+          <img src={`${base}qr-ai-academy.jpg`} alt="QR AI Academy" className="w-36 h-36 mb-4 rounded-lg" />
+          <p className="text-lg font-bold text-slate-800">AI Academy</p>
+          <p className="text-sm text-violet-600 mt-1">Вступайте в сообщество</p>
+        </Card>
+      </div>
+    </div>
+    <div className="flex justify-center items-end border-t border-slate-200 pt-6">
+      <div className="text-center">
+        <p className="text-sm text-slate-500 font-medium">28 января 2026 | Ташкент</p>
+        <p className="text-xs text-slate-400 font-mono mt-1">AI TRANSFORMATION LECTURE</p>
+      </div>
+    </div>
+  </div>
+);

@@ -9,7 +9,7 @@ import {
   Slide11Phase0, Slide12Phase1, Slide13Phase2, Slide14Phase3,
   Slide15Metrics, Slide16Baseline,
   Slide17People, Slide18AIInterview,
-  Slide19Summary, Slide20Contacts
+  Slide19Summary, Slide20Contacts, Slide21AlphaThanks
 } from './components/Slides';
 
 const SLIDES = [
@@ -20,7 +20,7 @@ const SLIDES = [
   Slide11Phase0, Slide12Phase1, Slide13Phase2, Slide14Phase3,
   Slide15Metrics, Slide16Baseline,
   Slide17People, Slide18AIInterview,
-  Slide19Summary, Slide20Contacts
+  Slide19Summary, Slide20Contacts, Slide21AlphaThanks
 ];
 
 export default function App() {
