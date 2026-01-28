@@ -404,7 +404,7 @@ export const Slide10GoogleAI: React.FC<SlideProps> = () => (
       <div className="flex flex-col gap-4">
         <h3 className="font-mono text-red-500 uppercase tracking-widest text-sm font-bold flex items-center gap-2"><AlertTriangle size={16} /> 42% СВЕРНУЛИ AI — ANTI-PATTERNS</h3>
         <div className="rounded-xl overflow-hidden border border-red-200 shadow-sm">
-          <img src={`${base}illust-tank.png`} alt="Танк за хлебом" className="w-full h-28 object-cover object-center" />
+          <img src={`${base}illust-tank.png`} alt="Танк за хлебом" className="w-full h-40 object-contain" />
         </div>
         <Card className="bg-red-50 border-red-200">
           <div className="font-bold text-slate-800 mb-1">«Купим Copilot всем»</div>
